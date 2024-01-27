@@ -16,7 +16,7 @@ void swp(listint_t *x, listint_t *y)
 	y->next = x;
 }
 
-/*
+/**
  * insertion_sort_list - insertion sor of a list
  * @list: the list to be sorted
  */
