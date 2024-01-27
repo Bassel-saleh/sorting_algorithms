@@ -1,10 +1,10 @@
 #include "sort.h"
 /**
- * bubble_s - sorts an array using bubble sort
+ * bubble_sort - sorts an array using bubble sort
  * @array: array to be sorted
  * @size: size of array
  */
-void bubble_s(int *array, size_t size)
+void bubble_sort(int *array, size_t size)
 {
 	int tmp;
 	size_t i, j;
@@ -14,14 +14,14 @@ void bubble_s(int *array, size_t size)
 	i = 0;
 	while (i < size)
 	{
-		for (j = 0; k < size - 1; j++)
+		for (j = 0; j < size - 1; j++)
 		{
 			if (array[j] > array[j + 1])
 			{
 				tmp = array[j];
 				array[j] = array[j + 1];
-				array[k + 1] = tmp;
-				print_array(array, size)
+				array[j + 1] = tmp;
+				print_array(array, size);
 			}
 		}
 		i++;
