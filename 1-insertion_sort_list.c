@@ -22,7 +22,7 @@ void swp(listint_t *x, listint_t *y)
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *i, j;
+	listint_t *i, *j;
 
 	if (!list || !*list || !(*list)->next)
 		return;
@@ -38,7 +38,7 @@ void insertion_sort_list(listint_t **list)
 				swp(j->prev, j);
 				if (!j->prev)
 					*list = j;
-				preint_list((const listint_t *)*list);
+				print_list((const listint_t *)*list);
 			}
 			else
 				j = j->prev;
